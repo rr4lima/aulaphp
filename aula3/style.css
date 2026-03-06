@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Quicksand", Helvetica, sans-serif;
+    background-color: #ffe6f0;
+
+    /* Grid garante centralização horizontal perfeita */
+    display: grid;
+    place-items: start center;
+
+    padding-top: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: white;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    /* margin auto não é necessário com grid */
+}
+
+label {
+    font-weight: bold;
+    color: #cc0066;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 3px;
+    border-radius: 4px;
+    border: 1px solid #ff99cc;
+    font-size: 13px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    background-color: #ff4da6;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e60073;
+}
