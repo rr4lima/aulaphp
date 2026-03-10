@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <?php include_once "resultado.php"; ?>
+    <title>Quiz Geek</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <section id="telaInicial">
-        <header class="header">
-            <nav>
+<div class="container">
 
-                <div class="nome">
-                    <h1>Inira seu nome aqui:</h1>
-                    <label>Nome:</label>
-                    <input type="text" name="nome">
-                </div>
-                <h3>Seja Bem-vindo ao Quiz de Personalidade Tecnológica!</h3>
+<h1>⑅⋅˚₊‧ ୨Pink Dev Quiz୧ ‧₊˚⋅</h1>
 
-            </nav>
-        </header>
+<?php
+if(isset($_COOKIE['jogador'])){
+echo "<p>Bem-vinda de volta, ".$_COOKIE['jogador']." 💖</p>";
+}
+?>
 
-        <div id="texto">
-            <h1>Qual sua personalidade técnologica?</h1>
-            <span id="diferente">
-                Responda o quiz abaixo e descubra!
-            </span>
+<p>
+Descubra qual tipo de desenvolvedora você seria
+no universo da tecnologia!
+</p>
 
+<a href="quiz.php">
+<button>Start Game</button>
+</a>
 
-        </div>
-
-        <a href="quiz.php" class="botao">Começar Quiz</a>
-
-
-    </section>
-
-
-
+</div>
 
 </body>
-
 </html>
