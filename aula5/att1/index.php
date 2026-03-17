@@ -1,11 +1,33 @@
-<?php
-$arquivo = "produtos.json";
-$conteudo = file_get_contents($arquivo);
-$produtos = json_decode($conteudo, true);
+<!DOCTYPE html>
+<html lang="pt-br">
 
-foreach ($produtos as $produto) {
-    echo "Nome: " . $produto["nome"] . "<br>";
-    echo "Preço: R$ " . $produto["preco"] . "<br>";
-    echo "Categoria: " . $produto["categoria"] . "<br><br>";
-}
-?>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Aula 5</title>
+</head>
+
+<body>
+
+<h2>Cadastrar aluno</h2>
+
+<form action="php.php" method="POST">
+
+<label>Nome:</label>
+<input type="text" name="nome" required>
+<br><br>
+
+<label>Idade:</label>
+<input type="text" name="idade" required>
+<br><br>
+
+<label>Curso:</label>
+<input type="text" name="curso" required>
+<br><br>
+
+<button type="submit">Cadastrar</button>
+
+</form>
+
+</body>
+</html>
